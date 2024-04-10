@@ -1,0 +1,80 @@
+/*.hero {
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}*/
+
+/*.hero-foot {
+	background-color: rgba(0,0,0,.75) !important; 
+	padding-top: 1em !important;
+}*/
+
+/*.hero-foot>.container>.columns {
+	margin-bottom: 0em !important;
+}*/
+
+.navbar {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.navbar-menu {
+	background-color: rgba(0,0,0,0) !important;
+	box-shadow: none !important;
+}
+
+.navbar .navbar-menu {
+	flex-grow: initial;
+	flex-shrink: initial;
+}
+
+.navbar-item {
+	display: inline !important;
+	color: rgba(255,255,255,.5) !important; 
+	transition: color .5s !important;
+	background-color: rgba(0,0,0,0) !important;
+}
+
+.navbar-item:hover {
+	color: rgba(255,255,255,1) !important;
+}
+
+.title {
+	font-family: 'Urbanist' !important; 
+	color: rgba(255,255,255,.75) !important;
+}
+
+.subtitle {
+	font-family: 'Urbanist' !important; 
+	color:rgba(255,255,255,.75) !important;
+}
+
+/*.button-style {
+	color: white !important;
+	border-width: 0 !important;
+	background-color: rgba(37,211,96,.75) !important;
+	transition: background-color .5s !important;
+}*/
+
+/*.button-style:hover {
+	background-color: rgba(37,211,96,1) !important;
+}*/
+
+/*.link {
+	color: orange !important;
+	transition: color .5s !important;
+}*/
+
+/*.link:hover {
+	color: white !important;
+}*/
+
+/*.press {
+	opacity: 70% !important;
+	transition: opacity .5s !important;
+}*/
+
+/*.press:hover {opacity: 100% !important;}*/
+
+/*hr {height: .01em !important; background-color: rgba(255,255,255,.75) !important;}*/
