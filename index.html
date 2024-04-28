@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 
 <!--opengraph protocol for previewing site on social media-->
-<!--<html lang="en" prefix="og: https://ogp.me/ns#" class="has-navbar-fixed-bottom"> • useful for multiple hero sections-->
 <html lang="en" prefix="og: https://ogp.me/ns#" class="">
 
 <head>
-	
 	<!--html5 international character encoding support across browsers-->
 	<meta charset="UTF-8">
 	
 	<!--meta tags for enhanced site visibility to search engines-->
-	<meta name="author" content="Abhinav Kumar, Founder | Friends of Ervan Chew Park">
+	<meta name="author" content="Abhinav Kumar | Founder, Friends of Ervan Chew Park | 2024">
 	<meta name="description" content="Neighborhood engagement & beautification for Ervan Chew Park in Houston, Texas">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="houston, harris county, texas, city of houston, houston parks and recreation department, hpard, houston parks & rec, ervan chew park, dunlavy park, dunlavy street, baseball, soccer, basketball, splashpad, playground, jungle gym, wildflowers, dog park, dog poop, off leash, live oak, crepe myrtle">
@@ -18,180 +16,190 @@
 	<!--opengraph protocol for previewing site on social media-->
 	<meta property="og:type" content="website" />
 	<meta property="og:image:secure_url" content="https://ervanchewpark.com/01.png" />
-	<meta property="og:title" content="Friends of Ervan Chew Park" />
+	<meta property="og:title" content="Friends of Ervan Chew Park | 2024" />
 	<meta property="og:url" content="https://ervanchewpark.com" />
 	<meta property="og:description" content="Neighborhood engagement & beautification for Ervan Chew Park in Houston, Texas" />
 	
-	<title>Friends of Ervan Chew Park | Civic organization for one of Houston's best city parks</title>
+	<title>Friends of Ervan Chew Park | Help us help Chew</title>
 	
-	<!--favicon svg image-->
-	<link rel="icon" type="image/x-icon" href="">
-	
-	<!--preload home page background video-->
-	<link rel="preload" as="video" href="01.mp4">
-	<link rel="preload" as="video" href="01.webm">
 	<link rel="preload" as="image" href="01.png">
+	<link rel="preload" as="video" href="01.webm">
 	
-	<!--external css stylesheet-->
-	<link rel="stylesheet" href="style.css">
-	
-	<!--bulma framework-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css">
-	
-	<!--fontawesome-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-	
-	<!--google fonts-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Braah+One&display=swap">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
 </head>
 
 <style>
-	html {background-color: black !important; scroll-behavior: smooth !important;}
-	.hero {background-image: url('') !important;}
-	.hero-body {background-color: rgba(0,0,0,0) !important;}
-	#mainvideo {max-width: none !important;}
-	@media screen and (max-width: 768px) {.hero-video {display: inline !important;}}
-	/*disable smooth scrolling when users have prefers-reduced-motion enabled*/
-	@media screen and (prefers-reduced-motion: reduce) {html {scroll-behavior: auto !important;}}
-	.portfolio {box-shadow: .5em .5em .25em rgba(0,0,0,.25) !important;}
-</style>
+	html {background-color: black;}
+	.title {
+		color: white;
+		font-family: 'Love Ya Like A Sister';
+		text-shadow: .085em .065em .035em rgba(26,86,83,1);
+	}
+	.subtitle {
+		color: white;
+		font-family: 'Sacramento';
+		text-shadow: .085em .065em .075em rgba(26,86,83,1);
+	}
+	
+	/* transparent bottom navbar */
+	.navbar {background-color: rgba(0,0,0,.5);}
+	
+	/* 'navbar-menu' width is less than 'navbar' width, need 0 color */
+	.navbar-menu {background-color: rgba(0,0,0,0); }
+	
+	.navbar-menu.is-active {
+		/* keeps 'navbar-item' horizontally center on mobile width */
+		display: flex;
+		/* keeps 'navbar-item' horizontally center */
+		justify-content: center;
+	}
+	
+	/* stops video from shrinking with browswer width */
+	.hero-video>video {max-width: none;}
+	
+	/* keeps video visible on mobile width */
+	@media screen and (max-width: 768px) {
+		.hero-video {display: inline;}
+	}
+	
+	.modal-content {
+		padding-right: 1em !important;
+		padding-left: 1em !important;
+	}
+	</style>
 
 <body>
 	
-	<!--above the fold video-->
-	<section class="hero is-fullheight video" id="one">
-	    
+	<nav class="navbar is-fixed-bottom">
+		<div class="container">
+			<!-- 'is-active' keeps navbar visible on mobile width -->
+			<div id="navMenu" class="navbar-menu is-active">
+				<div class="navbar-item">
+					<div class="buttons">
+						<a class="button is-dark is-medium	" href="https://maps.app.goo.gl/BxyS6oTYTBASjnR27" target="_blank">
+							<i class="fa-solid fa-location-dot"></i>
+						</a>
+						<a class="button is-dark is-medium" href="https://www.houstontx.gov/parks/dogparks.html" target="_blank">
+							<i class="fa-solid fa-paw"></i>
+						</a>
+						<a class="button is-dark is-medium" href="https://www.houstontx.gov/parks/waterspraygrounds.html" target="_blank">
+							<i class="fa-solid fa-shower"></i>
+						</a>
+						<a class="button is-dark is-medium" href="https://vrrequest.sos.state.tx.us/index.asp" target="_blank">
+							<i class="fa-solid fa-check-to-slot"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<section class="hero is-fullheight-with-navbar">
+		<!-- thank you github user 'leodrummond' for 'hero-video' div -->
+		<!-- https://gist.github.com/leodrummond/bc3fbb44919a1e2d796ff2e4742514d0 -->
 		<div class="hero-video">
-			<video preload="auto" poster="01.png" id="mainvideo" playsinline autoplay muted loop>
-				<source src="01.mp4" type="video/mp4">
+			<video preload="auto" poster="01.png" playsinline autoplay muted loop>
 				<source src="01.webm" type="video/webm">
 			</video>
 		</div>
 		
-		<div class="hero-head">
-			
-			<nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
-				<!--<div class="navbar-brand">
-					<a class="navbar-item" href="https://bulma.io">
-						<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-					</a>
-					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-						<span aria-hidden="true"></span>
-						<span aria-hidden="true"></span>
-						<span aria-hidden="true"></span>
-					</a>
-				</div>-->
-				
-				<div class="navbar-menu is-active">
-					<a class="navbar-item" href="https://maps.app.goo.gl/KDzUCGRLgBiNtzgp9" target="_blank">
-						<i class="fa-solid fa-location-dot"></i>
-					</a>
-					<a class="navbar-item" href="https://www.houstontx.gov/parks/waterspraygrounds.html" target="_blank">
-						<i class="fa-solid fa-droplet"></i>
-					</a>
-					<a class="navbar-item" href="https://www.houstontx.gov/parks/dogparks.html" target="_blank">
-						<i class="fa-solid fa-paw"></i>
-					</a>
-					<a class="navbar-item" href="https://maps.app.goo.gl/KqpoTZAeh2t1a4naA" target="_blank">
-						<i class="fa-solid fa-baseball-bat-ball"></i>
-					</a>
-					<a class="navbar-item" href="https://vrrequest.sos.state.tx.us/index.asp" target="_blank">
-						<i class="fa-solid fa-flag-usa"></i>
-					</a>
-			    </div>
-				
-			</nav>
-			
-		</div>
-		
-		<div class="hero-body has-text-centered">
+		<div class="hero-body">
+			<!-- 'container' keeps 'hero-body' text visible in front of video -->
 			<div class="container">
-				<h1 class="title">Friends of Ervan Chew Park</h1>
-				<h2 class="subtitle is-size-7-mobile"><br>friendsofervanchewpark@protonmail.com<br><br>4502 Dunlavy Street, Houston, TX 77098<br><br>civic beautification</h2>
-				<!--<div class="buttons">
-					<a class="button button-style is-rounded" href="https://www.jotform.com/230828014081044" target="_blank">Submit story</a>
-					<a class="button button-style is-rounded" href="https://continental-club-houston.square.site/" target="_blank">Get tickets</a>
-				</div>-->
+				<h1 class="title is-size-1">
+					Friends of<br>Ervan Chew Park
+				</h1>
+				<h2 class="subtitle">
+					4502 Dunlavy Street, Houston, Texas, 77006
+				</h2>
+				<div class="buttons">
+					<a class="button button-style is-warning js-modal-trigger" data-target="contactForm">
+						<h2><i class="fa-solid fa-sun"></i>&nbsp;Got an idea?</h2>
+					</a>
+				</div>
 			</div>
 		</div>
-		
-		<div class="hero-foot has-text-centered">
-			<!--<div class="container">
-				<div class="columns is-mobile has-text-centered is-centered is-multiline is-vcentered">
-					<div class="column is-narrow">
-						<a class="icon is-size-4 foot-icon" href="https://instagram.com/grownupstorytime" target="_blank">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-					</div>
-					<div class="column is-narrow">
-						<a class="icon is-size-4 foot-icon" href="./tickets.html" target="_self">
-							<i class="fa-solid fa-ticket"></i>
-						</a>
-					</div>
-					<div class="column is-narrow">
-						<a class="icon is-size-4 foot-icon" href="https://goo.gl/maps/VZpDCy7qtBuPQiXw6" target="_blank">
-							<i class="fa-solid fa-location-dot"></i>
-						</a>
-					</div>
-					<div class="column is-narrow">
-						<a class="icon is-size-4 foot-icon" href="./index.html" target="_self">
-							<i class="fa-solid fa-home"></i>
-						</a>
-					</div>
-					<div class="column is-narrow">
-						<a class="icon is-size-4 foot-icon" href="./about.html" target="_self">
-							<i class="fa-solid fa-circle-question"></i>
-						</a>
-					</div>
-					<div class="column is-narrow">
-						<a class="icon is-size-4 foot-icon" href="./history.html" target="_self">
-							<i class="fa-solid fa-clock-rotate-left"></i>
-						</a>
+	</section>
+	
+	<!--contact form popup-->
+	<div class="modal" id="contactForm">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<form action="https://formsubmit.co/friendsofervanchewpark@protonmail.com" method="POST">
+				<div class="field">
+					<label class="label"></label>
+					<div class="control">
+						<textarea class="textarea" type="text" name="message" placeholder="🖊 My message..." required></textarea>
 					</div>
 				</div>
-			</div>-->
+				<div class="field">
+					<label class="label"></label>
+					<div class="control">
+						<input class="input" type="email" name="email" placeholder="✉️ My email..." required>
+					</div>
+				</div>
+				<div class="buttons">
+					<button class="button button-style is-warning" type="submit">
+						<i class="fa-solid fa-envelopes-bulk"></i>&nbsp;Send my message
+					</button>
+				</div>
+			</form>
 		</div>
 	
-	</section>
-
-</body>
-
-<script>
-	// smooth scrolling javascript for non-Safari browsers
-	$(document).ready(function(){
-		
-		// Add smooth scrolling to all links
-		$("a").on('click', function(event) {
-			
-			// Make sure this.hash has a value before overriding default behavior
-			if (this.hash !== "") {
-				
-				// Prevent default anchor click behavior
-				event.preventDefault();
-				
-				// Store hash
-				var hash = this.hash;
-				
-				// Using jQuery's animate() method to add smooth page scroll
-				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-				
-				$('html, body').animate({scrollTop: $(hash).offset().top}, 500, function(){
-					
-					// Add hash (#) to URL when done scrolling (default click behavior)
-					window.location.hash = hash;
-				
-				});
-			
-			} // End if
-		
-		});
+	</div>
 	
-	});
-</script>
+	<script>
+		// thanks to bulma.io for modal code
+		// https://bulma.io/documentation/components/modal/
+		document.addEventListener('DOMContentLoaded', () => {
+			// Functions to open and close a modal
+			function openModal($el) {
+				$el.classList.add('is-active');
+			}
+			
+			function closeModal($el) {
+				$el.classList.remove('is-active');
+			}
+			
+			function closeAllModals() {
+				(document.querySelectorAll('.modal') || []).forEach(($modal) => {
+					closeModal($modal);
+				});
+			}
+			
+			// Add a click event on buttons to open a specific modal
+			(document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+				const modal = $trigger.dataset.target;
+				const $target = document.getElementById(modal);
+				
+				$trigger.addEventListener('click', () => {
+					openModal($target);
+				});
+			});
+
+			// Add a click event on various child elements to close the parent modal
+			(document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+				const $target = $close.closest('.modal');
+				
+				$close.addEventListener('click', () => {
+					closeModal($target);
+				});
+			});
+			
+			// Add a keyboard event to close all modals
+			document.addEventListener('keydown', (event) => {
+				if(event.key === "Escape") {
+					closeAllModals();
+				}
+			});
+		});
+		</script>
+	
+</body>
 
 </html>
